@@ -1,0 +1,13 @@
+Penjelasan mengenai error nomor 2:
+Error/Crash tersebut terjadi ketika input angka 1 atau 2
+kalkulator yang dibuat tidak bisa memvalidasi apakah string yang dimasukkan
+itu angka atau bukan dalam kasus ini string tersebut kosong, 
+ketika kosong maka program akan bingung memberikan hasil yang 
+dikalkulasikan akhirnya program berhenti dari 'run' sehingga crash/error
+
+Solusi:
+Membuat Error Handling dan mengecek field sebelum parsing ke double
+dengan fungsi try & catch
+
+
+https://github.com/dekapd99/Mobile_DL_IF633

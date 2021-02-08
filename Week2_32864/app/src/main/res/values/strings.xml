@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Week2_32864</string>
+    <!--Defini string untuk main activity-->
+    <string name="angka1">Angka 1</string>
+    <string name="angka2">Angka 2</string>
+    <string name="btnTambah">Tambah</string>
+    <string name="btnKurang">Kurang</string>
+    <string name="btnKali">Kali</string>
+    <string name="btnBagi">Bagi</string>
+    <string name="hasil">Hasil</string>
+</resources>

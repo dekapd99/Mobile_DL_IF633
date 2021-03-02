@@ -31,7 +31,7 @@ public class ViewAnimasi extends View {
         membesar.setDuration(DURASI);
         membesar.setInterpolator(new LinearInterpolator());
 
-        ObjectAnimator mengecil = ObjectAnimator.ofFloat(this, "radius", getWidth(), 0);
+        ObjectAnimator mengecil = ObjectAnimator.ofFloat(this, "radius", 0, getWidth());
         mengecil.setDuration(DURASI);
         mengecil.setInterpolator(new LinearOutSlowInInterpolator());
         mengecil.setStartDelay(DELAY);

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android" android:oneshot="false">
+    <item android:drawable="@drawable/kuda01" android:duration="300"/>
+    <item android:drawable="@drawable/kuda02" android:duration="300"/>
+    <item android:drawable="@drawable/kuda03" android:duration="300"/>
+    <item android:drawable="@drawable/kuda04" android:duration="300"/>
+    <item android:drawable="@drawable/kuda05" android:duration="300"/>
+    <item android:drawable="@drawable/kuda06" android:duration="300"/>
+    <item android:drawable="@drawable/kuda07" android:duration="300"/>
+    <item android:drawable="@drawable/kuda08" android:duration="300"/>
+    <item android:drawable="@drawable/kuda09" android:duration="300"/>
+    <item android:drawable="@drawable/kuda10" android:duration="300"/>
+    <item android:drawable="@drawable/kuda11" android:duration="300"/>
+</animation-list>

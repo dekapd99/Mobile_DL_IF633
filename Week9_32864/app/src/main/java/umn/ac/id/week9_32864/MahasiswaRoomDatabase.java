@@ -8,24 +8,25 @@ import androidx.room.Room;
 import androidx.room.RoomDatabase;
 import androidx.sqlite.db.SupportSQLiteDatabase;
 
-@Database(entities =  (Mahasiswa.class), version = 1, exportSchema = false)
+@Database(entities = {Mahasiswa.class}, version = 1, exportSchema = false)
 public abstract class MahasiswaRoomDatabase extends RoomDatabase {
+
     public abstract MahasiswaDAO daoMahasiswa();
     private static MahasiswaRoomDatabase INSTANCE;
-    static MahasiswaRoomDatabase getDatabase(final Context context){
-        if (INSTANCE == null){
-            synchronized (MahasiswaRoomDatabase.class){
-                if (INSTANCE == null){
-                    INSTANCE = Room.databaseBuilder(context.getApplicationContext(),
-                            MahasiswaRoomDatabase.class, "dbMahasiswa").addCallback(sRoomDatabaseCallback).build();
+    static MahasiswaRoomDatabase getDatabase(final Context context) {
+        if (INSTANCE == null) {
+            synchronized (MahasiswaRoomDatabase.class) {
+                if (INSTANCE == null) {
+                    INSTANCE = Room.databaseBuilder( context.getApplicationContext(), MahasiswaRoomDatabase.class, "dbMahasiswa") .addCallback(sRoomDatabaseCallback) .build();
                 }
             }
         }
         return INSTANCE;
     }
-
-    private static RoomDatabase.Callback sRoomDatabaseCallback = new RoomDatabase.Callback(){
+    private static RoomDatabase.Callback sRoomDatabaseCallback = new RoomDatabase.Callback() {
         @Override
-        public void onOpen(@NonNull SupportSQLiteDatabase db){super.onOpen(db);}
+        public void onOpen(@NonNull SupportSQLiteDatabase db) {
+            super.onOpen(db);
+        }
     };
 }

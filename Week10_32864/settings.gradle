@@ -1,2 +1,0 @@
-include ':app'
-rootProject.name = "Week10_32864"
